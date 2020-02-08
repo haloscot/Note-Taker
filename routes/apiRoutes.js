@@ -2,7 +2,7 @@
 // LOAD DATA
 // ===============================================================================
 
-var notesData = require("../Develop/db/db");
+var notesData = require("../db/db");
 
 
 
@@ -24,7 +24,7 @@ module.exports = function(app) {
 
   app.delete("/api/notes/:id", function(req, res) {
       var delID = req.params.id ;
-     fs.readFile("../Develop/db/db.json", 'utf8', (err,data) => {
+     fs.readFile("../db/db.json", 'utf8', (err,data) => {
           data = JSON.parse( data );
      
      delete data[delID];
