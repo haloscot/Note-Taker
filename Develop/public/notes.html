@@ -51,9 +51,11 @@
   <script type="text/javascript">
  
   // adds new note w/ unique id
- var count = 0;
+ 
+ 
     $("#add-btn").on("click", function (event) {
       event.preventDefault();
+      var count = 0;
       var newNote = {
         title: $("#noteTitle").val().trim(),
         text: $("#noteText").val().trim(),
