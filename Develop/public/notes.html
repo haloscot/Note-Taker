@@ -43,7 +43,7 @@
       <button type="submit" class="btn btn-danger btn-md">View Notes</button>
       <form>
       </div>
-      
+
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="/assets/js/index.js"></script>
@@ -53,7 +53,7 @@
     $("#add-btn").on("click", function (event) {
       event.preventDefault();
       var newNote = {
-        id: noteCount++
+        id: noteCount++,
         title: $("#noteTitle").val().trim(),
         text: $("#noteText").val().trim(),
       };
